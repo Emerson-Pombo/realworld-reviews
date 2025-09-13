@@ -1,0 +1,30 @@
+{
+  "name": "realworld-reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emerson-Pombo/realworld-reviews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Emerson-Pombo/realworld-reviews/issues"
+  },
+  "homepage": "https://github.com/Emerson-Pombo/realworld-reviews#readme",
+  "devDependencies": {
+    "sass": "^1.92.1",
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
+  }
+}
