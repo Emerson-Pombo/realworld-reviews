@@ -1,15 +1,18 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import app from '../src/web/app'
-import {connectPostgres } from './store/postgres'
+import app from '../src/web/app.js'
+import {connectPostgres } from './store/postgres.js'
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
+const HOST = '0.0.0.0'
 
-const startServer = async () => {
+
+
+const boot = async () => {
     try {
         await connectPostgres();
-        app.listen(PORT, () => {
+        app.listen(PORT, HOST, () => {
             console.log(`Server is running on port ${PORT}`);
         });
     } catch (error) {
@@ -17,3 +20,5 @@ const startServer = async () => {
         process.exit(1);
     }
 }
+
+boot().then(r => console.log(r) );
